@@ -10,3 +10,6 @@ $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 $ ln -s ~/.vim/.vimrc ~/.vimrc
 $ gvim -c "PluginInstall"
 ```
+
+# Screnshots
+![alt text](http://i.imgur.com/SabzkO2.png)
