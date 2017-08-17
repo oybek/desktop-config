@@ -9,14 +9,12 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'scrooloose/nerdtree'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'bling/vim-airline'
 Plugin 'morhetz/gruvbox'
-Plugin 'STL-improved'
+Plugin 'mizuchi/stl-syntax'
 let g:airline#extensions#tabline#enabled = 1
-Plugin 'tomasr/molokai'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -50,7 +48,6 @@ set guifont=Ubuntu\ Mono\ 14
 set list lcs=tab:\|\ 
 
 let g:rehash256 = 1
-colorscheme molokai
 colorscheme gruvbox
 set cursorline
 set guioptions-=T
