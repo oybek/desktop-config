@@ -8,8 +8,8 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
-Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'scrooloose/nerdtree'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'bling/vim-airline'
