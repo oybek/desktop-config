@@ -16,7 +16,6 @@ Plugin 'morhetz/gruvbox'
 Plugin 'mizuchi/stl-syntax'
 Plugin 'myusuf3/numbers.vim'
 Plugin 'matze/vim-move'
-Plugin 'kien/rainbow_parentheses.vim'
 
 let g:airline#extensions#tabline#enabled = 1
 
