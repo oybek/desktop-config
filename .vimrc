@@ -31,12 +31,12 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+
+
 "------------------------------ My settings ------------------------------------
 map <F2> :%y+ <CR>
 map <F4> :silent exec "!gnome-terminal --maximize -x bash -c './run.sh %'" <CR>
 map <F3> "+p
-
-let g:vim_game_code_break_item_limit = 2 
 
 set wrap!
 
@@ -44,11 +44,14 @@ set autoread
 set number
 set tabstop=4
 set shiftwidth=4
-set guifont=Ubuntu\ Mono\ 14
+set guifont=Ubuntu\ Mono\ 12
 set list lcs=tab:\|\ 
 
-let g:rehash256 = 1
+let g:rehash256=1
+
+set background=dark
 colorscheme gruvbox
+
 set cursorline
 set guioptions-=T
 
