@@ -14,6 +14,9 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'bling/vim-airline'
 Plugin 'morhetz/gruvbox'
 Plugin 'mizuchi/stl-syntax'
+Plugin 'myusuf3/numbers.vim'
+Plugin 'matze/vim-move'
+
 let g:airline#extensions#tabline#enabled = 1
 
 " All of your Plugins must be added before the following line
@@ -54,6 +57,8 @@ colorscheme gruvbox
 
 set cursorline
 set guioptions-=T
+
+let g:move_key_modifier = 'C'
 
 
 "with your cursor on a line or a block selected, type `:HL`
