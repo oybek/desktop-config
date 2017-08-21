@@ -16,6 +16,8 @@ Plugin 'morhetz/gruvbox'
 Plugin 'mizuchi/stl-syntax'
 Plugin 'myusuf3/numbers.vim'
 Plugin 'matze/vim-move'
+Plugin 'mattn/invader-vim'
+Plugin 'TeTrIs.vim'
 
 let g:airline#extensions#tabline#enabled = 1
 
@@ -37,6 +39,8 @@ filetype plugin indent on    " required
 
 
 "------------------------------ My settings ------------------------------------
+set hlsearch
+
 map <F2> :%y+ <CR>
 map <F4> :silent exec "!gnome-terminal --maximize -x bash -c './run.sh %'" <CR>
 map <F3> "+p
@@ -47,7 +51,7 @@ set autoread
 set number
 set tabstop=4
 set shiftwidth=4
-set guifont=Ubuntu\ Mono\ 12
+set guifont=Ubuntu\ Mono\ 14
 set list lcs=tab:\|\ 
 
 let g:rehash256=1
