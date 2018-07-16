@@ -8,16 +8,14 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
+Plugin 'tomasr/molokai'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'bling/vim-airline'
 Plugin 'morhetz/gruvbox'
 Plugin 'mizuchi/stl-syntax'
-Plugin 'myusuf3/numbers.vim'
-Plugin 'matze/vim-move'
-Plugin 'mattn/invader-vim'
-Plugin 'TeTrIs.vim'
+Plugin 'wincent/command-t'
 
 let g:airline#extensions#tabline#enabled = 1
 
@@ -37,13 +35,13 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 
-
 "------------------------------ My settings ------------------------------------
 set hlsearch
 
 map <F2> :%y+ <CR>
-map <F4> :silent exec "!gnome-terminal --maximize -x bash -c './run.sh %'" <CR>
-map <F3> "+p
+
+set listchars=eol:↲,tab:▶\ ,trail:~,extends:>,precedes:<
+set list
 
 set wrap!
 
@@ -51,29 +49,18 @@ set autoread
 set number
 set tabstop=4
 set shiftwidth=4
-set guifont=Ubuntu\ Mono\ 14
-set list lcs=tab:\|\ 
+set guifont=DejaVu\ Sans\ Mono\ 10
 
 let g:rehash256=1
 
 set background=dark
 colorscheme gruvbox
 
-set cursorline
 set guioptions-=T
+set guioptions-=m
 
-let g:move_key_modifier = 'C'
+set cursorline
 
-
-"with your cursor on a line or a block selected, type `:HL`
-"to remove, on each line call :sign unplace
-highlight HL ctermbg=darkgray
-sign define hl linehl=HL
-let s:highlightLineSignId = 74000
-function! g:HighlightLine()
-	execute 'sign place' s:highlightLineSignId 'line='.line(".") 'name=hl' 'file='.expand("%")
-	let s:highlightLineSignId += 1
-endfunction
-command! HL call g:HighlightLine()
-
-autocmd BufNewFile,BufRead *.bla   set syntax=c                                                                                                                                                           
+" Command-t open in new tab by default
+let g:CommandTAcceptSelectionMap = '<C-t>'
+let g:CommandTAcceptSelectionTabMap = '<CR>'
