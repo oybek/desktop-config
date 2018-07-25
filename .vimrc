@@ -40,7 +40,7 @@ set hlsearch
 
 map <F2> :%y+ <CR>
 
-set listchars=eol:↲,tab:▶\ ,trail:~,extends:>,precedes:<
+set listchars=eol:↲,tab:⎸\ ,trail:✖,extends:>,precedes:<
 set list
 
 set wrap!
@@ -54,12 +54,15 @@ set guifont=DejaVu\ Sans\ Mono\ 10
 let g:rehash256=1
 
 set background=dark
+let g:gruvbox_contrast_dark='hard'
 colorscheme gruvbox
 
 set guioptions-=T
 set guioptions-=m
+set guioptions-=r
 
 set cursorline
+" set cursorcolumn
 
 " Command-t open in new tab by default
 let g:CommandTAcceptSelectionMap = '<C-t>'
