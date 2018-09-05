@@ -67,3 +67,7 @@ set cursorline
 " Command-t open in new tab by default
 let g:CommandTAcceptSelectionMap = '<C-t>'
 let g:CommandTAcceptSelectionTabMap = '<CR>'
+
+command! Screenshot :read ! bash /home/okhashimov/garage/imgur.sh/screenshot.sh
+command! Publish :!git add . && git commit -m "udpate" && git push origin master
+
