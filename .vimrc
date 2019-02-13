@@ -40,7 +40,7 @@ set hlsearch
 
 map <F2> :%y+ <CR>
 
-set listchars=eol:↲,tab:⎸\ ,trail:✖,extends:>,precedes:<
+set listchars=tab:⎸\ ,trail:✖,extends:>,precedes:<
 set list
 
 set wrap!
