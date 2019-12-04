@@ -57,6 +57,8 @@ set tabstop=4
 set shiftwidth=4
 set guifont=DejaVu\ Sans\ Mono\ 9
 
+syntax on
+
 let g:rehash256=1
 
 set background=dark
@@ -79,4 +81,5 @@ command! Screenshot :read ! bash /home/okhashimov/garage/imgur.sh/screenshot.sh
 command! Publish :!git add . && git commit -m "udpate" && git push origin master
 
 nmap <silent> gd :call CocAction('jumpDefinition', 'tab drop') <CR>
+nmap <silent> gy :call CocAction('doHover', 'preferShowAbove') <CR>
 
